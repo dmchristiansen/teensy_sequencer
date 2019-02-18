@@ -1,0 +1,152 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:D D2
+U 1 1 5C65F117
+P 3550 4000
+F 0 "D2" H 3550 3784 50  0000 C CNN
+F 1 "D" H 3550 3875 50  0000 C CNN
+F 2 "" H 3550 4000 50  0001 C CNN
+F 3 "~" H 3550 4000 50  0001 C CNN
+	1    3550 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5C65F240
+P 4500 3850
+F 0 "#PWR0102" H 4500 3600 50  0001 C CNN
+F 1 "GND" H 4505 3677 50  0000 C CNN
+F 2 "" H 4500 3850 50  0001 C CNN
+F 3 "" H 4500 3850 50  0001 C CNN
+	1    4500 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 4100 3200 4000
+Wire Wire Line
+	3200 4000 3400 4000
+Wire Wire Line
+	3700 4000 3800 4000
+Wire Wire Line
+	4500 3800 4500 3850
+Wire Wire Line
+	3800 3300 4300 3300
+Wire Wire Line
+	4300 3400 3800 3400
+Wire Wire Line
+	3800 3500 4300 3500
+Wire Wire Line
+	4300 3600 3800 3600
+$Comp
+L Connector_Generic:Conn_02x08_Odd_Even J1
+U 1 1 5C65ECC8
+P 4000 3600
+F 0 "J1" H 4050 4117 50  0000 C CNN
+F 1 "Conn_02x08_Odd_Even" H 4050 4026 50  0000 C CNN
+F 2 "" H 4000 3600 50  0001 C CNN
+F 3 "~" H 4000 3600 50  0001 C CNN
+	1    4000 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 3800 4300 3800
+Wire Wire Line
+	4500 3800 4300 3800
+Connection ~ 4300 3800
+Wire Wire Line
+	4300 3700 4300 3800
+Wire Wire Line
+	4300 3900 4300 3800
+Wire Wire Line
+	4300 3900 3800 3900
+Connection ~ 4300 3900
+Wire Wire Line
+	3800 3700 4300 3700
+Connection ~ 4300 3700
+Wire Wire Line
+	3800 4000 4300 4000
+Connection ~ 3800 4000
+$Comp
+L Device:D D1
+U 1 1 5C660FEB
+P 3300 3600
+F 0 "D1" H 3300 3816 50  0000 C CNN
+F 1 "D" H 3300 3725 50  0000 C CNN
+F 2 "" H 3300 3600 50  0001 C CNN
+F 3 "~" H 3300 3600 50  0001 C CNN
+	1    3300 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D3
+U 1 1 5C66105C
+P 3600 3500
+F 0 "D3" H 3600 3716 50  0000 C CNN
+F 1 "D" H 3600 3625 50  0000 C CNN
+F 2 "" H 3600 3500 50  0001 C CNN
+F 3 "~" H 3600 3500 50  0001 C CNN
+	1    3600 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 3600 3800 3600
+Connection ~ 3800 3600
+Wire Wire Line
+	3800 3500 3750 3500
+Connection ~ 3800 3500
+$Comp
+L power:+12V #PWR0103
+U 1 1 5C6612EB
+P 3050 3250
+F 0 "#PWR0103" H 3050 3100 50  0001 C CNN
+F 1 "+12V" H 3065 3423 50  0000 C CNN
+F 2 "" H 3050 3250 50  0001 C CNN
+F 3 "" H 3050 3250 50  0001 C CNN
+	1    3050 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0104
+U 1 1 5C661320
+P 3400 3250
+F 0 "#PWR0104" H 3400 3100 50  0001 C CNN
+F 1 "+5V" H 3415 3423 50  0000 C CNN
+F 2 "" H 3400 3250 50  0001 C CNN
+F 3 "" H 3400 3250 50  0001 C CNN
+	1    3400 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 3250 3400 3500
+Wire Wire Line
+	3400 3500 3450 3500
+Wire Wire Line
+	3150 3600 3050 3600
+Wire Wire Line
+	3050 3600 3050 3250
+$Comp
+L power:-12V #PWR0105
+U 1 1 5C661765
+P 3200 4100
+F 0 "#PWR0105" H 3200 4200 50  0001 C CNN
+F 1 "-12V" H 3215 4273 50  0000 C CNN
+F 2 "" H 3200 4100 50  0001 C CNN
+F 3 "" H 3200 4100 50  0001 C CNN
+	1    3200 4100
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC

@@ -1,0 +1,297 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 4xxx:4051 U2
+U 1 1 5C661B37
+P 2350 2300
+F 0 "U2" H 2250 3250 50  0000 C CNN
+F 1 "4051" H 2200 3150 50  0000 C CNN
+F 2 "" H 2350 2300 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4051bms-52bms-53bms.pdf" H 2350 2300 50  0001 C CNN
+	1    2350 2300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5C661C61
+P 2300 3250
+F 0 "#PWR0106" H 2300 3000 50  0001 C CNN
+F 1 "GND" H 2305 3077 50  0000 C CNN
+F 2 "" H 2300 3250 50  0001 C CNN
+F 3 "" H 2300 3250 50  0001 C CNN
+	1    2300 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 3200 2350 3250
+$Comp
+L power:+3.3V #PWR0107
+U 1 1 5C661CC5
+P 1800 1300
+F 0 "#PWR0107" H 1800 1150 50  0001 C CNN
+F 1 "+3.3V" H 1815 1473 50  0000 C CNN
+F 2 "" H 1800 1300 50  0001 C CNN
+F 3 "" H 1800 1300 50  0001 C CNN
+	1    1800 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4xxx:4051 U3
+U 1 1 5C67348B
+P 9350 2300
+F 0 "U3" H 9891 2346 50  0000 L CNN
+F 1 "4051" H 9891 2255 50  0000 L CNN
+F 2 "" H 9350 2300 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4051bms-52bms-53bms.pdf" H 9350 2300 50  0001 C CNN
+	1    9350 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5C673536
+P 9400 3250
+F 0 "#PWR0108" H 9400 3000 50  0001 C CNN
+F 1 "GND" H 9405 3077 50  0000 C CNN
+F 2 "" H 9400 3250 50  0001 C CNN
+F 3 "" H 9400 3250 50  0001 C CNN
+	1    9400 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 3200 9350 3250
+Wire Wire Line
+	9350 3250 9400 3250
+Wire Wire Line
+	9450 3250 9450 3200
+Wire Wire Line
+	9450 3250 9400 3250
+Connection ~ 9400 3250
+$Comp
+L power:+3.3V #PWR0109
+U 1 1 5C67362A
+P 9350 1350
+F 0 "#PWR0109" H 9350 1200 50  0001 C CNN
+F 1 "+3.3V" H 9365 1523 50  0000 C CNN
+F 2 "" H 9350 1350 50  0001 C CNN
+F 3 "" H 9350 1350 50  0001 C CNN
+	1    9350 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 1350 9350 1400
+Wire Wire Line
+	2250 3200 2250 3250
+Wire Wire Line
+	2250 3250 2300 3250
+Wire Wire Line
+	2300 3250 2350 3250
+Connection ~ 2300 3250
+Wire Wire Line
+	1800 1300 1800 1350
+Wire Wire Line
+	1800 1700 1850 1700
+Wire Wire Line
+	2350 1400 2350 1350
+Wire Wire Line
+	2350 1350 1800 1350
+Connection ~ 1800 1350
+Wire Wire Line
+	1800 1350 1800 1700
+Wire Wire Line
+	5000 1250 5000 1200
+Connection ~ 5000 1200
+Wire Wire Line
+	5600 1200 5000 1200
+Wire Wire Line
+	5600 1250 5600 1200
+Connection ~ 5600 1200
+Wire Wire Line
+	6200 1200 5600 1200
+Wire Wire Line
+	6200 1250 6200 1200
+Connection ~ 6200 1200
+Wire Wire Line
+	6800 1200 6200 1200
+Wire Wire Line
+	6800 1250 6800 1200
+Connection ~ 6800 1200
+Wire Wire Line
+	7400 1200 6800 1200
+Wire Wire Line
+	7400 1250 7400 1200
+Wire Wire Line
+	7400 1600 8000 1600
+Wire Wire Line
+	7400 1550 7400 1600
+Connection ~ 7400 1600
+Wire Wire Line
+	6800 1600 7400 1600
+Wire Wire Line
+	6800 1550 6800 1600
+Connection ~ 6800 1600
+Wire Wire Line
+	6200 1600 6800 1600
+Wire Wire Line
+	6200 1550 6200 1600
+Connection ~ 6200 1600
+Wire Wire Line
+	5600 1600 6200 1600
+Wire Wire Line
+	5600 1550 5600 1600
+Connection ~ 5600 1600
+Wire Wire Line
+	5000 1600 5600 1600
+Wire Wire Line
+	5000 1550 5000 1600
+Connection ~ 5000 1600
+Wire Wire Line
+	4400 1600 5000 1600
+Wire Wire Line
+	4400 1550 4400 1600
+Wire Wire Line
+	5000 1200 4400 1200
+Wire Wire Line
+	4400 1200 3800 1200
+Connection ~ 4400 1200
+Wire Wire Line
+	4400 1250 4400 1200
+Wire Wire Line
+	3800 1200 3800 1250
+Connection ~ 7400 1200
+Wire Wire Line
+	8000 1200 7400 1200
+Wire Wire Line
+	8000 1250 8000 1200
+Wire Wire Line
+	8000 1600 8000 1550
+Connection ~ 4400 1600
+Wire Wire Line
+	3800 1600 4400 1600
+Wire Wire Line
+	3800 1600 3800 1550
+Connection ~ 3800 1600
+$Comp
+L power:GND #PWR?
+U 1 1 5C675058
+P 3800 1600
+F 0 "#PWR?" H 3800 1350 50  0001 C CNN
+F 1 "GND" H 3805 1427 50  0000 C CNN
+F 2 "" H 3800 1600 50  0001 C CNN
+F 3 "" H 3800 1600 50  0001 C CNN
+	1    3800 1600
+	1    0    0    -1  
+$EndComp
+Connection ~ 3800 1200
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5C674FE9
+P 3800 1200
+F 0 "#PWR?" H 3800 1050 50  0001 C CNN
+F 1 "+3.3V" H 3815 1373 50  0000 C CNN
+F 2 "" H 3800 1200 50  0001 C CNN
+F 3 "" H 3800 1200 50  0001 C CNN
+	1    3800 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT_US RV8
+U 1 1 5C674C4E
+P 8000 1400
+F 0 "RV8" H 7932 1446 50  0000 R CNN
+F 1 "100k" H 7932 1355 50  0000 R CNN
+F 2 "" H 8000 1400 50  0001 C CNN
+F 3 "~" H 8000 1400 50  0001 C CNN
+	1    8000 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT_US RV7
+U 1 1 5C674C0E
+P 7400 1400
+F 0 "RV7" H 7332 1446 50  0000 R CNN
+F 1 "100k" H 7332 1355 50  0000 R CNN
+F 2 "" H 7400 1400 50  0001 C CNN
+F 3 "~" H 7400 1400 50  0001 C CNN
+	1    7400 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT_US RV6
+U 1 1 5C674BD2
+P 6800 1400
+F 0 "RV6" H 6732 1446 50  0000 R CNN
+F 1 "100k" H 6732 1355 50  0000 R CNN
+F 2 "" H 6800 1400 50  0001 C CNN
+F 3 "~" H 6800 1400 50  0001 C CNN
+	1    6800 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT_US RV5
+U 1 1 5C674B9E
+P 6200 1400
+F 0 "RV5" H 6132 1446 50  0000 R CNN
+F 1 "100k" H 6132 1355 50  0000 R CNN
+F 2 "" H 6200 1400 50  0001 C CNN
+F 3 "~" H 6200 1400 50  0001 C CNN
+	1    6200 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT_US RV4
+U 1 1 5C674A86
+P 5600 1400
+F 0 "RV4" H 5532 1446 50  0000 R CNN
+F 1 "100k" H 5532 1355 50  0000 R CNN
+F 2 "" H 5600 1400 50  0001 C CNN
+F 3 "~" H 5600 1400 50  0001 C CNN
+	1    5600 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT_US RV3
+U 1 1 5C674A58
+P 5000 1400
+F 0 "RV3" H 4932 1446 50  0000 R CNN
+F 1 "100k" H 4932 1355 50  0000 R CNN
+F 2 "" H 5000 1400 50  0001 C CNN
+F 3 "~" H 5000 1400 50  0001 C CNN
+	1    5000 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT_US RV2
+U 1 1 5C674A24
+P 4400 1400
+F 0 "RV2" H 4332 1446 50  0000 R CNN
+F 1 "100k" H 4332 1355 50  0000 R CNN
+F 2 "" H 4400 1400 50  0001 C CNN
+F 3 "~" H 4400 1400 50  0001 C CNN
+	1    4400 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT_US RV1
+U 1 1 5C6742E5
+P 3800 1400
+F 0 "RV1" H 3732 1446 50  0000 R CNN
+F 1 "100k" H 3732 1355 50  0000 R CNN
+F 2 "" H 3800 1400 50  0001 C CNN
+F 3 "~" H 3800 1400 50  0001 C CNN
+	1    3800 1400
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
