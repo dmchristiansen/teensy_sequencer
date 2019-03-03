@@ -11,13 +11,14 @@ void ClockInterface::init() {
 
 	// configure pin settings
 	PORTA_PCR1 |=
-		(PORT_PCR_IRQC(9)	// enable rising-edge interrupts
+		(PORT_PCR_IRQC(10)	// enable falling-edge interrupts
 		|PORT_PCR_MUX(1)	// set pin mode to GPIO
-		|PORT_PCR_PE			// enable pull-down resistor
+		|PORT_PCR_PE			// enable pull resistor
+		|PORT_PCR_PS			// set pull-up resistor
 		);
 
 	// setup for clock interrupt on pin 3 (port A1)
-	NVIC_SET_PRIORITY(IRQ_PORTA, 0);
+	//NVIC_SET_PRIORITY(IRQ_PORTA, 0);
 	NVIC_ENABLE_IRQ(IRQ_PORTA);
 
 	

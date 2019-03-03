@@ -6,6 +6,7 @@
 #define SWITCH_INTERFACE_H
 
 #include "system.h"
+#include "control_state.h"
 
 class SwitchInterface {
 
@@ -18,7 +19,7 @@ class SwitchInterface {
 		~SwitchInterface() {};
 		void init();
 
-		uint8_t scan();
+		uint8_t scan(ControlState*);
 
 };
 

@@ -8,7 +8,7 @@ void SwitchInterface::init() {
 
 }
 
-uint8_t SwitchInterface::scan() {
+uint8_t SwitchInterface::scan(ControlState* state) {
 
 	uint8_t mask = 0;
 

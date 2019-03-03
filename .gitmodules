@@ -4,6 +4,3 @@
 [submodule "hardware/teensy.pretty"]
 	path = hardware/teensy.pretty
 	url = https://github.com/XenGi/teensy.pretty.git
-[submodule "libraries/ADC"]
-	path = libraries/ADC
-	url = https://github.com/pedvide/ADC.git

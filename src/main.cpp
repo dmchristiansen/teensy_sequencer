@@ -1,35 +1,51 @@
+
+
+
 #include "WProgram.h"
 #include "controller.h"
 #include "ui.h"
 #include "system.h"
+#include "Arduino.h"
+
+void ms_tick(void);
 
 SequenceController controller;
 UI ui;
-
+ControlState control_state;
 
 extern "C" int main(void)
 {
 	pinMode(13, OUTPUT);
 	digitalWrite(13, LOW);
 
-	ui.init();
-	controller.init(&ui);
+	//Serial.begin(115200);
 
-	while (1) {}
+	ui.init(&control_state);
+	controller.init(&ui, &control_state);
 
+	// reassign systick interrupt
+	_VectorsRam[15] = &ms_tick;
+
+	while (1) {
+		//delay(10);
+		//Serial.println(*(uint16_t*)&ADC0_RA);
+	}
 
 }
 
-void systick_isr(void) {
+// 1ms tick, scans input & updates current state
+void ms_tick(void) {
 
-	// poll system
+	systick_millis_count++;
+
 	ui.poll();
+	controller.update();
 
 }
 
 void porta_isr(void) {
 	
-	// check if the interrupt was on pa1
+	// check if the interrupt was on PTA1
 	if (PORTA_ISFR & 0x2) {
 		PORTA_ISFR = 0x00000002;		// clear interrupt
 		controller.advance();	// respond to clock edge

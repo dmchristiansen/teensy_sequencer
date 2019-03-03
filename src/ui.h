@@ -8,9 +8,7 @@
 #include "system.h"
 #include "cv_input.h"
 #include "switch.h"
-
-struct StepState;
-struct ControlState;
+#include "control_state.h"
 
 class UI {
 
@@ -18,15 +16,16 @@ class UI {
 	
 		CVInput cv_;
 		SwitchInterface switch_;
+		ControlState* state = 0;
 
 	public:
 
 		UI() {};
 		~UI() {};
-		void init();
+		void init(ControlState*);
 
 		void poll();
-		void read(StepState*, ControlState*);
+		void refresh();
 
 };
 
